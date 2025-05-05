@@ -1,6 +1,6 @@
 // RoomPlanModule.ts (Native modülün implementasyonu)
 
-import { NativeEventEmitter, NativeModules } from 'react-native';
+import { NativeEventEmitter, NativeModules, NativeModules } from 'react-native';
 
 const { RoomPlanModule } = NativeModules;
 
@@ -30,7 +30,7 @@ export const stopRoomScan = () => {
 
 // Tarama sonucu alındığında çağrılacak event listener
 export const addRoomScanListener = (
-  callback: (event: RoomScanEvent) => void
+  callback: (event: RoomScanEvent) => void,
 ) => {
   return roomPlanEventEmitter.addListener('onRoomScanned', callback);
 };
