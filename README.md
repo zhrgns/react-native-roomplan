@@ -14,15 +14,16 @@ This project uses ESLint and Prettier for code quality and formatting. Before co
 
 ### Running Linting Manually
 
-````bash
+```bash
 npm run lint
+```
 
 ## Installation
 
 ```bash
 npm install react-native-roomplan
 cd ios && pod install
-````
+```
 
 ## Usage
 
